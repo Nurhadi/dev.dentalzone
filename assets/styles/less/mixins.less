@@ -1,0 +1,66 @@
+.panels(@bg: @white, @color: @text-color, @border-rad: 7px, @border-color: @grey, @border-size: 1px, @pad: 14px){
+	background: @bg;
+	border: @border-size solid @border-color;
+	padding: @pad;
+	color: @color;
+	overflow: hidden;
+	margin-bottom: 20px;
+	min-height: 240px;
+	.lh-border-radius(7px);
+
+	h1, h2, h3, h4, h5, h6{
+		color: @color;
+	}
+}
+
+
+.table-rounded(@table-radius: 3px, @table-border-color: #DDDDDD) {
+	border-collapse: separate;
+	border: solid @table-border-color 1px;
+	border-radius: @table-radius;
+	border-left:0px;
+
+	td, th {
+		border-left: 1px solid @table-border-color;
+		border-top: 1px solid @table-border-color;
+	}
+
+	th {
+		border-top: none;
+
+		&:first-child {
+			border-radius: @table-radius 0 0 0;
+		}
+
+		&:last-child {
+			border-radius: 0 @table-radius 0 0;
+		}
+
+		&:only-child{
+			border-radius: @table-radius @table-radius 0 0;
+		}
+	}
+
+
+	tr{
+		&:last-child{
+			td{
+				&:first-child {
+					border-radius: 0 0 0 @table-radius;
+				}
+
+				&:last-child {
+					border-radius: 0 0 @table-radius 0;
+				}
+			}
+		}
+	}
+
+	& > thead, & > tbody, & > tfoot{
+		& > tr{
+			& > th, & > td{
+				border-color: @table-border-color;
+			}
+		}
+	}
+}

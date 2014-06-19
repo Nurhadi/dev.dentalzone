@@ -1,0 +1,200 @@
+.no-pad{
+	padding: 0;
+}
+
+.offset-img{
+	margin: -15px -15px 0 -15px;
+
+	@media(min-width: @screen-md-min){
+		margin: -15px;
+	}
+}
+
+.mar-top-0{
+	margin-top: 0;
+}
+
+.mar-top-1{
+	margin-top: @line-height-computed/2;
+}
+
+.mar-top-2{
+	margin-top: @line-height-computed;
+}
+
+.mar-top-3{
+	margin-top: @line-height-computed * 3/2;
+}
+
+.mar-top-4{
+	margin-top: @line-height-computed * 2;
+}
+
+.mar-btm-0{
+	margin-bottom: 0;
+}
+
+.mar-btm-1{
+	margin-bottom: @line-height-computed/2;
+}
+
+.mar-btm-2{
+	margin-bottom: @line-height-computed;
+}
+
+.mar-btm-3{
+	margin-bottom: @line-height-computed * 3/2;
+}
+
+.mar-top-4{
+	margin-bottom: @line-height-computed * 2;
+}
+
+.mar-right-0{
+	margin-right: 0;
+}
+
+.mar-right-1{
+	margin-right: 10px;
+}
+
+.mar-right-2{
+	margin-right: 20px;
+}
+
+.mar-right-3{
+	margin-right: 30px;
+}
+
+.mar-right-4{
+	margin-right: 40px;
+}
+
+.mar-left-0{
+	margin-left: 0;
+}
+
+.mar-left-1{
+	margin-left: 10px;
+}
+
+.mar-left-2{
+	margin-left: 20px;
+}
+
+.mar-left-3{
+	margin-left: 30px;
+}
+
+.mar-left-4{
+	margin-left: 40px;
+}
+
+
+
+.doctor-name{
+	display: block;
+	font-size: 21px;
+	margin: 10px;
+}
+
+.news-item{
+	.make-sm-column(4);
+	.text-center;
+	margin-bottom: @line-height-computed;
+}
+	.news-item-img {
+		display: block;
+		height: 180px;
+		overflow: hidden;
+		margin-bottom: @line-height-computed/2;
+		.lh-border-radius(7px);
+	}
+
+	.news-item-title{
+		display: inline-block;
+		font-size: 18px;
+		margin-bottom: @line-height-computed/2;
+	}
+
+.table-jadwal-praktek-profile{
+	.table-rounded(7px, @grey);
+	.text-center;
+
+	& > thead{
+		& > tr{
+			& > th{
+				border-bottom: none;
+			}
+		}
+	}
+
+	th{
+		text-align: center;
+		font-weight: 400;
+	}
+}
+
+
+.table-jadwal-praktek{
+	.table-rounded(5px, @grey);
+	.text-center;
+	border-color: @grey;
+	background: @white;
+	color: @secondary-color;
+	font-size: 18px;
+	border-radius: 9px 9px 5px 5px;
+	margin: @line-height-computed 0;
+
+	th {
+		border-top: none;
+		text-align: center;
+		font-weight: 400;
+
+		&:first-child {
+			border-radius: 9px 0 0 0;
+		}
+
+		&:last-child {
+			border-radius: 0 9px 0 0;
+		}
+
+		&:only-child{
+			border-radius: 9px 9px 0 0;
+		}
+	}
+
+	& > thead{
+		background: @primary-color;
+		color: @white;
+		font-size: 21px;
+
+		& > tr{
+			& > th{
+				border-bottom: none;
+				padding: 10px;
+			}
+		}
+	}
+
+	& > tbody{
+		& > tr{
+			& > td{
+				&:hover{
+					background: @secondary-color;
+					color: @white;
+				}
+			}
+		}
+	}
+}
+
+.notes{
+	color: orange;
+	font-size: 12px;
+	padding-left: 40px;
+}
+
+.about-text{
+	padding: 15px;
+}
